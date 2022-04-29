@@ -2,8 +2,6 @@
 
 * [下载](./download.md "下载图吧工具箱")
 
-* Generated with Docsify
 
-* By Catnet Studio
 
 

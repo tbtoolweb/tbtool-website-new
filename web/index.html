@@ -21,8 +21,27 @@
       repo: '',
 	  loadSidebar: true,
 	  subMaxLevel: 5,
-	  auto2top: true
-	  
+	  auto2top: true,
+	  plugins:
+      [
+        function(hook, vm)
+        {
+          hook.afterEach(function(html)
+          {
+            var footer =
+            [
+              '<hr/>',
+              '<footer>',
+              '<span>Copyright &copy; Sunlight Studio.All Rights Reserved.</span><br>',
+              '<span>Generated with <a href="https://github.com/docsifyjs/docsify" target="_blank">Docsify ',
+              window.Docsify.version,
+              '</a></span>',
+              '</footer>'
+            ].join('');
+            return html + footer;
+          });
+        }
+      ]
     }
   </script>
   <!-- Docsify v4 -->
