@@ -18,7 +18,7 @@
   <script>
     window.$docsify = {
       name: '图吧工具箱',
-      repo: '',
+      repo: 'https://github.com/tbtoolweb/tbtool-website-new',
 	  loadSidebar: true,
 	  subMaxLevel: 5,
 	  auto2top: true,
@@ -33,7 +33,7 @@
               '<hr/>',
               '<footer>',
               '<span>Copyright &copy; Sunlight Studio.All Rights Reserved.</span><br>',
-              '<span>Generated with <a href="https://github.com/docsifyjs/docsify" target="_blank">Docsify ',
+              '<span>Bulit with <a href="https://github.com/docsifyjs/docsify" target="_blank">Docsify',
               window.Docsify.version,
               '</a></span>',
               '</footer>'
@@ -46,5 +46,14 @@
   </script>
   <!-- Docsify v4 -->
   <script src="//unpkg.com/docsify@4"></script>
+  <!-- import PWA -->
+  <script>
+  if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('sw.js')
+  }
+  </script>
+  <!-- Cloudflare Web Analytics -->
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4e0edd562f6744169232b672458f5c78"}'></script>
+  <!-- End Cloudflare Web Analytics -->
 </body>
 </html>
